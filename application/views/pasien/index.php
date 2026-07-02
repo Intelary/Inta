@@ -43,7 +43,7 @@
 const dataUrl = "<?= base_url('pasien/tables') ?>";
 let allData = [];
 let currentPage = 1;
-const BASE_URL = "<?php base_url(); ?>";
+const BASE_URL = "<?= base_url() ?>";
 
 function getFilteredData() {
   // Control Filter
