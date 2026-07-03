@@ -100,6 +100,8 @@
     <div class="blog-filters">
       <button type="button" class="blog-filter-btn success" data-bs-toggle="modal" data-bs-target="#intiMualModal">Mual</button>
       <button type="button" class="blog-filter-btn danger" data-bs-toggle="modal" data-bs-target="#intiMuntahModal">Muntah</button>
+      <button type="button" class="blog-filter-btn danger" data-bs-toggle="modal" data-bs-target="#intiFatigueModal">Kelelahan</button>
+      <button type="button" class="blog-filter-btn danger" data-bs-toggle="modal" data-bs-target="#intiMukositisModal">Masalah Mulut & Tenggorokan</button>
     </div>
     <button type="button" class="blog-btn-add">
       <i class="bi bi-plus-lg btn-icon"></i>
@@ -110,3 +112,5 @@
 
 <?php $this->load->view('modal/mual'); ?>
 <?php $this->load->view('modal/muntah'); ?>
+<?php $this->load->view('modal/fatigue'); ?>
+<?php $this->load->view('modal/mukositis'); ?>

@@ -1,0 +1,75 @@
+/* inti.css — Base skeleton for QnA modals */
+
+.inti-modal .modal-content {
+  border-radius: 20px;
+  border: none;
+  overflow: hidden;
+}
+
+.inti-modal .modal-body {
+  padding: 24px;
+}
+
+.inti-question {
+  font-size: 14px;
+  color: #495057;
+  text-align: center;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.inti-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.inti-grid.odd-last .answer-card:last-child {
+  grid-column: span 2;
+}
+
+.answer-card {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: normal;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 12px;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  color: var(--card-text);
+  cursor: pointer;
+  padding: 12px;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.answer-card:hover {
+  background: var(--card-hover);
+  border-color: var(--card-hover-border);
+  transform: translateY(-2px);
+}
+
+.answer-card:active {
+  transform: translateY(0);
+  transition: all 0.08s ease;
+}
+
+.inti-close {
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafb;
+  color: #64748b;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.inti-close:hover {
+  background: #e9ecef;
+}
